@@ -31,10 +31,10 @@ export default function EventPage() {
   const getEvent = () => {
     getOneEvent(id)
       .then((event) => event.json())
-      .then((data => {
+      .then((data) => {
         setSingleEvent(data.event)
         setIsAttending(data.event.attendees.includes(getPayloadFromToken().userId))
-      }))
+      })
 
       .catch((error) => console.log(error.message))
   }

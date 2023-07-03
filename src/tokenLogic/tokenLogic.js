@@ -12,7 +12,7 @@ function removeToken() {
 }
 
 function createToken(userCredentials) {
-  return fetch('https://desolate-anchorage-87503.herokuapp.com/api/login', {
+  return fetch('https://eventmate.herokuapp.com/api/login', {
     method: 'POST',
     headers: {
       "Content-Type": "application/json",
